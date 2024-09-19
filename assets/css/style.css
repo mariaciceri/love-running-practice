@@ -98,9 +98,19 @@ main {
     margin-top: 47px;
 }
 
+/* icons are treated as font */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
 
-footer {
-    background-color: cadetblue;
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* media queries: tablet and larger screens (+768px) */
