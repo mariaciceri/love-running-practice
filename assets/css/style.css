@@ -113,7 +113,6 @@ footer {
         box-shadow: none;
         width: fit-content;
         padding-right:  1rem;
-
     }
 
     #menu {
@@ -137,5 +136,12 @@ footer {
     main {
         margin-top: 79px;
         /* push main content down */
+    }
+}
+
+@media screen and (min-width:992px) {
+    
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
