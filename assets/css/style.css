@@ -21,7 +21,14 @@ body {
 }
 
 header {
-    background-color: aquamarine;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    /* padding (left/right) to prevent text from sticking to the side of the screen */
+    position: fixed;
+    /* nav bar to scroll along */
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a; 
 }
 
 h1 {
