@@ -1,0 +1,22 @@
+/*  * (asterisk) is a wildcard, which applies to all elements in our page.
+that means it should come first so we can override it when we need later.
+most generic rules comes first*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border-box will set the entire element (borders too) to the height/width that will be set later*/
+}
+
+header {
+    background-color: aquamarine;
+}
+
+main {
+    background-color: bisque;
+}
+
+footer {
+    background-color: cadetblue;
+}
