@@ -30,7 +30,17 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a; 
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
+
+/* checkbox has a pseudo-class for when it is checked (:checked) */
+/* when we check the checkbox, we want the sibling nav element (one that comes after the checkbox input)to display,
+we use ~to target the adjoining nav element */
+#nav-toggle:checked~nav {
+    display: block;
+} 
 
 header a {
     text-decoration: none;
@@ -70,6 +80,16 @@ nav {
     padding: 0 1rem;
     display: none;
     /* display:none will hide the elements until the user clicks on them */
+    top: 100%;
+    /* this indicates that it will start after the parent, if 0, will cover the parent (header) */
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 main {
