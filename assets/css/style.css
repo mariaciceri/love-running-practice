@@ -1,5 +1,5 @@
 /* google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /*  * (asterisk) is a wildcard, which applies to all elements in our page.
 that means it should come first so we can override it when we need later.
@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     color: #3a3a3a;
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+
 }
 
 header {
@@ -29,7 +29,7 @@ header {
     /* nav bar to scroll along */
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a; 
+    box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -48,16 +48,15 @@ header a {
 }
 
 h1 {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: #252525;
 }
 
 #menu {
     font-size: 110%;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     list-style-type: none;
 }
 
@@ -76,8 +75,8 @@ nav {
     background-color: #ffffff;
     width: 100%;
     left: 0;
-    box-shadow: 0 2px 2px #3a3a3a;
     padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     /* display:none will hide the elements until the user clicks on them */
     top: 100%;
@@ -96,7 +95,7 @@ main {
     background-color: bisque;
     /* this flex conf will take up any surplus space to push footer down (grow shrink basis)*/
     flex: 1 0 auto;
-    margin-top: 40px;
+    margin-top: 47px;
 }
 
 
@@ -113,7 +112,8 @@ footer {
         /* relative for it to be inside the header again */
         box-shadow: none;
         width: fit-content;
-        padding:  1rem;
+        padding-right:  1rem;
+
     }
 
     #menu {
@@ -126,5 +126,16 @@ footer {
 
     .nav-toggle-label {
         display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        margin-top: 79px;
+        /* push main content down */
     }
 }
