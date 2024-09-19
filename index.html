@@ -20,7 +20,7 @@
             <h1 id="logo">Love Running</h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">X</label>
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul id="menu">
                 <li><a href="" class="active">Home</a></li>
@@ -35,7 +35,15 @@
     </main>
     
     <footer>
-        Footer
+        <ul>
+            <!-- rel=noopener will protect our site from being attacked -->
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (open a new tab)"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page (open a new tab)"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="https://www.x.com" target="_blank" rel="noopener" aria-label="Visit our X page (open a new tab)"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+        </ul>
     </footer>
+
+    <script src="https://kit.fontawesome.com/b80d18dd16.js" crossorigin="anonymous"></script>
+    <!-- putting JS code at the end of the body element will prevent the page to "slow down" / Font Awesome icons -->
 </body>
 </html>
