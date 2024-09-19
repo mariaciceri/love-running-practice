@@ -96,6 +96,7 @@ main {
     background-color: bisque;
     /* this flex conf will take up any surplus space to push footer down (grow shrink basis)*/
     flex: 1 0 auto;
+    margin-top: 40px;
 }
 
 
