@@ -9,12 +9,22 @@ most generic rules comes first*/
     /* border-box will set the entire element (borders too) to the height/width that will be set later*/
 }
 
+body {
+    min-height: 100vh;
+    /* min-height will allow it to stretch larger than the height of the screen if theres enough content*/
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+}
+
 header {
     background-color: aquamarine;
 }
 
 main {
     background-color: bisque;
+    /* this flex conf will take up any surplus space to push footer down (grow shrink basis)*/
+    flex: 1 0 auto;
 }
 
 footer {
