@@ -149,12 +149,12 @@ main {
 
 #benefits-physical > div, #benefits-mental > div {
     line-height: 20px;
-    
+    margin-bottom: 20px;
 }
 
 #benefits p {
     padding: 0 20px;
-    margin-bottom: 20px;
+    
 }
 
 #benefits hr {
