@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     color: #3a3a3a;
     font-family: "Lato", sans-serif;
+    font-weight: 300;
 }
 
 header {
@@ -31,8 +32,17 @@ header {
     box-shadow: 0 2px 2px #3a3a3a; 
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1 {
     font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #252525;
 }
 
 main {
@@ -43,4 +53,18 @@ main {
 
 footer {
     background-color: cadetblue;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 3px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
