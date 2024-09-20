@@ -216,6 +216,14 @@ that causes images to have a white line between them */
 #times h3 {
     color: #fafafa;
 }
+/* large or landscape phones */
+@media screen and (min-width:576px) {
+    #photos {
+        column-count: 2;
+        /* how many column the browser should use */
+        column-gap: 0;
+    }
+}
 
 /* media queries: tablet and larger screens (+768px) */
 @media screen and (min-width:768px){
@@ -273,12 +281,20 @@ that causes images to have a white line between them */
         align-self: flex-end;
         text-align: end;
     }
+
+    #photos {
+        column-count: 3;
+    }
 }
 
 @media screen and (min-width:992px) {
     
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    #photos {
+        column-count: 4;
     }
 }
 
