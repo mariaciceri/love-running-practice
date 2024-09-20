@@ -184,6 +184,23 @@ main {
     flex-wrap: wrap;
 }
 
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+    /* flex-basis set the minimum size of the element, so in this case
+    they wont wrap in screens less than 400px, instead they will grow */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* create a grid of meetups divs */
+    border: 2px solid #fafafa;
+}
+
+#times h3 {
+    color: #fafafa;
+}
+
 /* media queries: tablet and larger screens (+768px) */
 @media screen and (min-width:768px){
     /* header/ changes to the nav that are set to be in a way to fit phones */
@@ -257,10 +274,6 @@ main {
 
     #benefits > div {
         flex: 1;
-    }
-
-    #benefits-image {
-        order: 0;
     }
 
     #benefits-mental {
