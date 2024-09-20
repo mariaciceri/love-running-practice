@@ -19,7 +19,10 @@ body {
     color: #3a3a3a;
     font-family: "Lato", sans-serif;
 }
-
+/* for headings that we dont wanna show but are important for search engines */
+.hidden-heading {
+    display: none;
+}
 h1, h2, h3 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
