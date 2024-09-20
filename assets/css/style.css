@@ -108,7 +108,6 @@ main {
     position: relative;
 }
 
-
 #cover-text {
     background-color: rgba(216, 57, 57, 0.7);
     font-size: 130%;
@@ -123,6 +122,20 @@ main {
 #cover-text > h2, #cover-text > h3 {
     color: #ffffff;
 }
+
+/* gallery */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+/* photos are inline elements (treated like text) 
+and text has an automatic line height
+that causes images to have a white line between them */
+#photos {
+    line-height: 0;
+}
+
 /* icons are treated as font */
 #social-networks {
     text-align: center;
