@@ -334,14 +334,14 @@ that causes images to have a white line between them */
     }
 
     #signup {
-        background-position: ;
+        background-position: center;
         position: relative;
     }
 
     #signup-form {
         position: absolute;
-        margin-top: 150px;
-        margin-left: 10%;
+        top: 150px;
+        left: 10%;
         max-width: 400px;
     }
 
